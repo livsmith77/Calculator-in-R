@@ -89,7 +89,219 @@ if(choice < 5){
   print("Please enter a valid choice or 'quit()' to exit")
 }
 
+################################################################
+# TESTING FUNCTIONS & APP FLOW
+# Testing all functions, checking zero division error, negative numbers
+# floating point numbers, floating point division
+################################################################
 
+# > source('~/MSE77/Rcalc/rcalc2.R')
+# [1] "Please select a function: "
+# [1] "1. Add"
+# [1] "2. Subtract"
+# [1] "3. Multiply"
+# [1] "4. Divide"
+# [1] "5. Sqrt"
+# [1] "6. Exponent"
+# [1] "7. Cos"
+# [1] "8. Sin"
+# [1] "9. Tan"
+# [1] "10. Pi"
+# Enter choice[1/2/3/4/5/6/7/8/9/10]: 1
+# Enter first number: 3
+# Enter second number: 9
+# [1] "3 + 9 = 12"
+# 
+# 
+# > source('~/MSE77/Rcalc/rcalc2.R')
+# [1] "Please select a function: "
+# [1] "1. Add"
+# [1] "2. Subtract"
+# [1] "3. Multiply"
+# [1] "4. Divide"
+# [1] "5. Sqrt"
+# [1] "6. Exponent"
+# [1] "7. Cos"
+# [1] "8. Sin"
+# [1] "9. Tan"
+# [1] "10. Pi"
+# Enter choice[1/2/3/4/5/6/7/8/9/10]: 2
+# Enter first number: 5.7
+# Enter second number: 3.7
+# [1] "5.7 - 3.7 = 2"
+# 
+# 
+# > source('~/MSE77/Rcalc/rcalc2.R')
+# [1] "Please select a function: "
+# [1] "1. Add"
+# [1] "2. Subtract"
+# [1] "3. Multiply"
+# [1] "4. Divide"
+# [1] "5. Sqrt"
+# [1] "6. Exponent"
+# [1] "7. Cos"
+# [1] "8. Sin"
+# [1] "9. Tan"
+# [1] "10. Pi"
+# Enter choice[1/2/3/4/5/6/7/8/9/10]: 3
+# Enter first number: 60
+# Enter second number: 4
+# [1] "60 * 4 = 240"
+# 
+# 
+# > source('~/MSE77/Rcalc/rcalc2.R')
+# [1] "Please select a function: "
+# [1] "1. Add"
+# [1] "2. Subtract"
+# [1] "3. Multiply"
+# [1] "4. Divide"
+# [1] "5. Sqrt"
+# [1] "6. Exponent"
+# [1] "7. Cos"
+# [1] "8. Sin"
+# [1] "9. Tan"
+# [1] "10. Pi"
+# Enter choice[1/2/3/4/5/6/7/8/9/10]: 4
+# Enter first number: 5
+# Enter second number: 4.5
+# [1] "5 / 4.5 = 1.11111111111111"
+# 
+# 
+# > source('~/MSE77/Rcalc/rcalc2.R')
+# [1] "Please select a function: "
+# [1] "1. Add"
+# [1] "2. Subtract"
+# [1] "3. Multiply"
+# [1] "4. Divide"
+# [1] "5. Sqrt"
+# [1] "6. Exponent"
+# [1] "7. Cos"
+# [1] "8. Sin"
+# [1] "9. Tan"
+# [1] "10. Pi"
+# Enter choice[1/2/3/4/5/6/7/8/9/10]: 5
+# Enter your value: 9
+# [1] "Sqrt 9 = 3"
+# 
+# 
+# > source('~/MSE77/Rcalc/rcalc2.R')
+# [1] "Please select a function: "
+# [1] "1. Add"
+# [1] "2. Subtract"
+# [1] "3. Multiply"
+# [1] "4. Divide"
+# [1] "5. Sqrt"
+# [1] "6. Exponent"
+# [1] "7. Cos"
+# [1] "8. Sin"
+# [1] "9. Tan"
+# [1] "10. Pi"
+# Enter choice[1/2/3/4/5/6/7/8/9/10]: 6
+# Enter your value: 34
+# [1] "Exponent 34 = 583461742527455"
+# 
+# 
+# > source('~/MSE77/Rcalc/rcalc2.R')
+# [1] "Please select a function: "
+# [1] "1. Add"
+# [1] "2. Subtract"
+# [1] "3. Multiply"
+# [1] "4. Divide"
+# [1] "5. Sqrt"
+# [1] "6. Exponent"
+# [1] "7. Cos"
+# [1] "8. Sin"
+# [1] "9. Tan"
+# [1] "10. Pi"
+# Enter choice[1/2/3/4/5/6/7/8/9/10]: 7
+# Enter your value: 180
+# [1] "Cos 180 = -0.598460069057858"
+# 
+# 
+# > source('~/MSE77/Rcalc/rcalc2.R')
+# [1] "Please select a function: "
+# [1] "1. Add"
+# [1] "2. Subtract"
+# [1] "3. Multiply"
+# [1] "4. Divide"
+# [1] "5. Sqrt"
+# [1] "6. Exponent"
+# [1] "7. Cos"
+# [1] "8. Sin"
+# [1] "9. Tan"
+# [1] "10. Pi"
+# Enter choice[1/2/3/4/5/6/7/8/9/10]: 8
+# Enter your value: 90
+# [1] "Sin 90 = 0.893996663600558"
+# 
+# 
+# > source('~/MSE77/Rcalc/rcalc2.R')
+# [1] "Please select a function: "
+# [1] "1. Add"
+# [1] "2. Subtract"
+# [1] "3. Multiply"
+# [1] "4. Divide"
+# [1] "5. Sqrt"
+# [1] "6. Exponent"
+# [1] "7. Cos"
+# [1] "8. Sin"
+# [1] "9. Tan"
+# [1] "10. Pi"
+# Enter choice[1/2/3/4/5/6/7/8/9/10]: 9
+# Enter your value: 180
+# [1] "Tan 180 = 1.33869021035115"
+# 
+# 
+# > source('~/MSE77/Rcalc/rcalc2.R')
+# [1] "Please select a function: "
+# [1] "1. Add"
+# [1] "2. Subtract"
+# [1] "3. Multiply"
+# [1] "4. Divide"
+# [1] "5. Sqrt"
+# [1] "6. Exponent"
+# [1] "7. Cos"
+# [1] "8. Sin"
+# [1] "9. Tan"
+# [1] "10. Pi"
+# Enter choice[1/2/3/4/5/6/7/8/9/10]: 10
+# [1] "Pi = 3.14159265358979"
+# 
+# 
+# > source('~/MSE77/Rcalc/rcalc2.R')
+# [1] "Please select a function: "
+# [1] "1. Add"
+# [1] "2. Subtract"
+# [1] "3. Multiply"
+# [1] "4. Divide"
+# [1] "5. Sqrt"
+# [1] "6. Exponent"
+# [1] "7. Cos"
+# [1] "8. Sin"
+# [1] "9. Tan"
+# [1] "10. Pi"
+# Enter choice[1/2/3/4/5/6/7/8/9/10]: 4
+# Enter first number: -5
+# Enter second number: 3.33
+# [1] "-5 / 3.33 = -1.5015015015015"
+# 
+# 
+# > source('~/MSE77/Rcalc/rcalc2.R')
+# [1] "Please select a function: "
+# [1] "1. Add"
+# [1] "2. Subtract"
+# [1] "3. Multiply"
+# [1] "4. Divide"
+# [1] "5. Sqrt"
+# [1] "6. Exponent"
+# [1] "7. Cos"
+# [1] "8. Sin"
+# [1] "9. Tan"
+# [1] "10. Pi"
+# Enter choice[1/2/3/4/5/6/7/8/9/10]: 4
+# Enter first number: 6
+# Enter second number: 0
+# [1] "6 / 0 = Zero Division Error"
 
 
 
